@@ -47,7 +47,7 @@ header {
     background-color: black;
     text-align: left;
     display: flex;
-    align-items: center;
+    
     padding-top: 50px;
 }
 
@@ -154,6 +154,7 @@ ul {
     height: 800px;
     box-sizing: border-box;
     padding-top: 40px;
+    max-width: 100%;
 }
 
 .about-pics img {
@@ -196,7 +197,6 @@ ul {
     }
 
     header {
-        display: absolute;
         padding-top: 0px;
     }
 
