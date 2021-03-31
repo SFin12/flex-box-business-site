@@ -1,0 +1,307 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    color:blanchedalmond;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7rem;
+    background-color: black;
+}
+
+#nav-container {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.nav {
+    display: inline-block;
+    padding: 0px 5%;
+}
+
+a:link{
+    color:blanchedalmond;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 2em;
+}
+
+a:visited {
+    color: rgb(163, 151, 133);
+}
+
+header {
+    height: 300px;
+    font-family: 'Dela Gothic One', cursive;
+    color: blanchedalmond;
+    background-color: black;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.header-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container img{
+    display: inline-block;
+    margin: 50 50px;
+    height: 200px;
+    width: 200px;
+}
+
+header .title {
+    display: inline-block;
+    line-height: 100%;
+}
+
+#mission {
+    margin: 30px auto 0px;
+    background-image: linear-gradient(black,rgb(50,50,50),rgb(50,50,50));
+    padding: 40px 20px 20px 40px;
+    height: auto;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+#products {
+    margin: 0px auto;
+    background-image: linear-gradient(rgb(50,50,50),black);
+    padding: 40px 20px 20px 20px;
+    height: 900px;
+    max-width: 1000px;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#pictures {
+    display: block;
+    height: 400px;
+}
+
+#background {
+    position: absolute;
+    top: 150px;
+    left: 229px;
+    width: 152px;
+    height: 335px;
+  
+}
+
+#product-copy {
+    position: absolute;
+    top: 125px;
+    left: 50px;
+  
+}
+
+#background2 {
+    position: absolute;
+    top: 150px;
+    right: 230px;
+    width: 152px;
+    height: 335px;
+}
+
+#product-copy2 {
+    position: absolute;
+    top: 125px;
+    right: 50px;
+  
+}
+
+.products-flex {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+ul {
+    margin-top: 10px;
+    border-top:2px groove blanchedalmond;
+    width: 125px;
+}
+
+#about-us {
+    padding-top: 10x;
+    display: block;
+    max-width: 1000px;
+    margin: 25px auto;
+    height: 1000px;
+    box-sizing: border-box;
+}
+
+#about-us .products-flex {
+    margin: 50px 0;
+    text-align: center;
+    align-items: flex-end;
+    height: 800px;
+    box-sizing: border-box;
+    padding-top: 40px;
+}
+
+.about-pics img {
+    max-width: 320px;
+}
+
+#mountains {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#mountains:hover {
+    transform: scale(1.5);
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media only screen and (max-width: 850px){
+    #background {
+        left: 179px;
+       
+    }
+    
+    #product-copy {
+        left: 0px;
+      
+    }
+    
+    #background2 {
+        right: 180px;
+
+    }
+    
+    #product-copy2 {
+        right: 0px; 
+    }
+}
+
+#mountains:hover {
+    transform: scale(1);
+}
+
+
+@media only screen and (max-width: 775px) {
+    body {
+    font-size: 1.2em;
+    }
+
+   
+
+    .nav {
+        display: none;
+        width: 100px;
+    }
+
+    header {
+        display: absolute;
+   
+    }
+
+    .header-container {
+        display: block;
+        font-size: .8em;
+        margin: 0px auto;
+        text-align: center;
+    }
+    
+    .header-container h1 {
+        margin-top: 0px;
+    }
+
+    .header-container img {
+        display: block;
+        margin: 0px auto;
+        height: 150px;
+        width: 150px;
+    }
+
+    .mobile-only {
+        display: block;
+        position: fixed;
+        bottom: 0px;
+        background-color: black;
+        text-align: center;
+        width: 100%;
+    }
+
+    #picture {
+        box-sizing: border-box;
+        
+    }
+
+    #background {
+        left: 177px;
+        border-radius: 6px;
+        height: 334px;
+        width: 158px;
+    }
+    
+    #product-copy {
+        left: 105px;
+        height: 384px;
+        width: 300px;
+        object-fit: cover;
+        
+    }
+
+    .about-pics img {
+        height: auto;
+        width: 100%;
+    }
+    
+    #background2 {
+        right: 173px;
+        width: 159px;
+        height: 330px;
+        border-radius: 4px;
+        box-shadow: 5px 3px 2px 1px rgba(black, black, black);
+
+    }
+    
+    #product-copy2 {
+        right: 100px; 
+        height: 384px;
+        width: 300px;
+        object-fit: cover;
+    }
+
+    #mountains {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
