@@ -41,7 +41,7 @@ a:visited {
 }
 
 header {
-    height: 300px;
+    height: 500px;
     font-family: 'Dela Gothic One', cursive;
     color: blanchedalmond;
     background-color: black;
@@ -83,7 +83,6 @@ header .title {
     margin: 0px auto;
     background-image: linear-gradient(rgb(50,50,50),black);
     padding: 40px 20px 20px 20px;
-    height: 900px;
     max-width: 1000px;
     display: block;
     position: relative;
@@ -91,44 +90,39 @@ header .title {
 }
 
 #pictures {
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
     height: 400px;
-}
-
-#background {
-    position: absolute;
-    top: 150px;
-    left: 229px;
-    width: 152px;
-    height: 335px;
-  
+    flex-wrap: wrap;
+    height: auto;
 }
 
 #product-copy {
-    position: absolute;
-    top: 125px;
-    left: 50px;
-  
-}
-
-#background2 {
-    position: absolute;
-    top: 150px;
-    right: 230px;
-    width: 152px;
-    height: 335px;
+   
+    margin-bottom: 10px;
+    background-image: url("https://oneclickroot.com/wp-content/uploads/2017/06/2012-11-23-16.10.30.png");
+    background-repeat: no-repeat;
+    background-size: 94% 100%;
+    background-position: center;
+    border: 2px groove rgb(20, 20, 20);
+    border-radius: 15px;
+    flex-shrink: .9;
 }
 
 #product-copy2 {
-    position: absolute;
-    top: 125px;
-    right: 50px;
+    margin-bottom: 10px;
+    background-image: url("https://i.pinimg.com/originals/b5/ee/c9/b5eec97fc1eb26f2b16140e8823173ca.jpg");
+    background-repeat: no-repeat;
+    background-size: 94% 100%;
+    background-position: center;
+    border: 2px groove rgb(20, 20, 20);
+    border-radius: 15px;
   
 }
 
 .products-flex {
-    position: relative;
     width: 100%;
+    height: auto;
     margin: 20px auto;
     bottom: 50px;
     display: flex;
@@ -181,28 +175,12 @@ ul {
 }
 
 @media only screen and (max-width: 850px){
-    #background {
-        left: 179px;
-       
-    }
     
-    #product-copy {
-        left: 0px;
-      
-    }
     
-    #background2 {
-        right: 180px;
 
+    #mountains:hover {
+        transform: scale(1);
     }
-    
-    #product-copy2 {
-        right: 0px; 
-    }
-}
-
-#mountains:hover {
-    transform: scale(1);
 }
 
 
@@ -212,7 +190,6 @@ ul {
     }
 
    
-
     .nav {
         display: none;
         width: 100px;
@@ -220,7 +197,7 @@ ul {
 
     header {
         display: absolute;
-   
+        padding-top: 0px;
     }
 
     .header-container {
@@ -250,46 +227,6 @@ ul {
         width: 100%;
     }
 
-    #picture {
-        box-sizing: border-box;
-        
-    }
-
-    #background {
-        left: 177px;
-        border-radius: 6px;
-        height: 334px;
-        width: 158px;
-    }
-    
-    #product-copy {
-        left: 105px;
-        height: 384px;
-        width: 300px;
-        object-fit: cover;
-        
-    }
-
-    .about-pics img {
-        height: auto;
-        width: 100%;
-    }
-    
-    #background2 {
-        right: 173px;
-        width: 159px;
-        height: 330px;
-        border-radius: 4px;
-        box-shadow: 5px 3px 2px 1px rgba(black, black, black);
-
-    }
-    
-    #product-copy2 {
-        right: 100px; 
-        height: 384px;
-        width: 300px;
-        object-fit: cover;
-    }
 
     #mountains {
         max-width: 100%;
